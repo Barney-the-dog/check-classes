@@ -1,8 +1,9 @@
 const RocketEngine = require('./rocket-engine');
 
-class solidPropellantRocketEngine {
- constructor (name) {
-    this.name = name;
+class solidPropellantRocketEngine extends RocketEngine {
+ constructor (name, specificImpulse, rocketPropellant) {
+   super(specificImpulse, rocketPropellant);
+   this.name = name;
 }
 }
 
